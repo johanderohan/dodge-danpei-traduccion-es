@@ -2,7 +2,7 @@
 
 Traducción al **español de España** de *Honoo no Toukyuuji — Dodge Danpei* para **Mega Drive**, realizada a partir del japonés de la ROM.
 
-**Descarga: [v0.1-dev — Parche y documentación](https://github.com/johanderohan/dodge-danpei-traduccion-es/releases/tag/v0.1-dev).**
+**Descarga: [v0.1-dev — Parche IPS](https://github.com/johanderohan/dodge-danpei-traduccion-es/releases/tag/v0.1-dev).**
 
 Se distribuye como parche IPS. Necesitas tu propia copia del juego; la descarga no incluye una ROM.
 
@@ -16,7 +16,7 @@ Se distribuye como parche IPS. Necesitas tu propia copia del juego; la descarga 
 | Narración y nombres | 19 rótulos narrativos, 23 etiquetas de hablante y 175 registros de jugador. |
 | Interfaz | Opciones, selección, posiciones, fichas, versus y liga; avisos del entrenamiento y del partido. |
 | Gráficos | 15 títulos de ronda, créditos y FIN, inicio y celebración de liga, rótulos de título y demostración. |
-| Castellano | Minúsculas, tildes, diéresis, ñ, ¡ y ¿; biblia de términos y abreviaturas. |
+| Castellano | Minúsculas, tildes, diéresis, ñ, ¡ y ¿. |
 
 Se han probado el arranque, el acceso al primer partido, el acceso al entrenamiento y una liga de dos equipos de la CPU resuelta mediante el resultado automático. Los diálogos, capítulos y créditos también se han comprobado mediante selección de escenas.
 
@@ -26,10 +26,7 @@ Se conservan el logotipo japonés, las marcas y atribuciones originales, las ban
 
 ## Descarga e instalación
 
-En **[Releases](https://github.com/johanderohan/dodge-danpei-traduccion-es/releases)** encontrarás:
-
-- `dodge_danpei_es_0.1-dev.ips`: parche independiente.
-- `dodge_danpei_es_0.1-dev.zip`: el mismo parche, aplicador con verificación, biblia de traducción, informe de calidad y notas técnicas.
+Descarga **`dodge_danpei_es_0.1-dev.ips`** de la sección **[Releases](https://github.com/johanderohan/dodge-danpei-traduccion-es/releases)**. Es el único archivo publicado en la descarga.
 
 La base debe ser la ROM **japonesa original de 524.288 bytes**, sin parches previos ni cabecera adicional.
 
@@ -39,17 +36,12 @@ La base debe ser la ROM **japonesa original de 524.288 bytes**, sin parches prev
 | ROM resultante, 1.048.576 bytes | `c174d9d2f30a7c5888e7173a07f0d0a2d202e6100fd2e3886c81508ab2c6fe74` |
 | Parche IPS | `5adf99e159ab9288303629acd4d0b1261d52ada8c1e96e765acbda619acb9606` |
 
-Descomprime el ZIP y aplica el parche con Python 3:
+1. Comprueba que tu copia coincide con la huella del original japonés.
+2. Aplica el IPS con un aplicador compatible con ampliación de ROM y guarda el resultado en un archivo nuevo.
+3. Comprueba que la ROM resultante tiene el tamaño y la huella indicados arriba.
+4. Cárgala en el emulador e inicia una partida nueva. Un estado instantáneo de otra versión no acredita el funcionamiento de esta.
 
-```sh
-python3 aplicar_parche.py "original.md" "dodge_danpei_es_0.1-dev.ips" "Dodge Danpei (Castellano).md"
-```
-
-El aplicador comprueba las huellas y crea un archivo nuevo. También puedes usar un aplicador IPS compatible con ampliación de ROM, comprobando después la huella de salida. Inicia las pruebas con una partida nueva: un estado instantáneo de otra versión no acredita el funcionamiento de esta.
-
-## Documentación y errores
-
-La biblia incluida en el ZIP fija las voces, los términos deportivos, los nombres, las abreviaturas y los criterios de composición. El informe de calidad detalla qué se ha comprobado y qué sigue pendiente.
+## Errores
 
 Para comunicar un error, abre una incidencia con la versión del parche, el emulador, el modo y la pantalla o frase afectada. No adjuntes la ROM.
 
